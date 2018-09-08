@@ -1,0 +1,288 @@
+<div class="container-fluid">
+    <aside>
+        <!-- anh parallax 1 // row1   -->
+        <div class="row">
+            <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/shopping-portrait-pretty-purchase-style-sunglasses-1435599-pxhere.com.jpg">
+                <div class="container info">
+                    <p class="aside-comment">
+                        SINCE 1985
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- anh parallax 2 // row 2 -->
+        <div class="row">
+            <div style="width: 50%; min-height: 355px;" class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/red-color-paint-painting-nail-polish-art-1095989-pxhere.com.jpg">
+
+            </div>
+            <div class="background-picture">
+                <!-- <div class="info aside-comment"> -->
+                <!-- <a class="text-a" href="#">Buy Now</a> -->
+                <div class="container-fluid slide" style="
+								    padding-right: 0;
+								    padding-left: 0;
+										margin-right: auto;
+								    margin-left: auto;">
+                    <!--Slide-->
+                    <div class="fluid_container">
+                        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+                            <div data-thumb="images/index_background/abstract-girl-woman-photography-female-brunette-692890-pxhere.com.jpg" data-src="images/index_background/abstract-girl-woman-photography-female-brunette-692890-pxhere.com.jpg" style="width: 100%">
+                            </div>
+                            <div data-thumb="images/index_background/beautiful-boy-fun-girl-human-hand-1437159-pxhere.com.jpg" data-src="images/index_background/beautiful-boy-fun-girl-human-hand-1437159-pxhere.com.jpg" style="width: 100%">
+                            </div>
+                            <div data-thumb="images/index_background/lipstick-girl-cool-hand-fun-1444817-pxhere.com.jpg" data-src="images/index_background/lipstick-girl-cool-hand-fun-1444817-pxhere.com.jpg" style="width: 100%">
+                            </div>
+                            <div data-thumb="images/index_background/hand-photography-bottle-still-life-glass-bottle-brand-805880-pxhere.com.jpg" data-src="images/index_background/hand-photography-bottle-still-life-glass-bottle-brand-805880-pxhere.com.jpg" style="width: 100%">
+                            </div>
+                            <div data-thumb="images/index_background/woman-lip-nose-eyebrow-beauty-close-up-1437373-pxhere.com.jpg" data-src="images/index_background/woman-lip-nose-eyebrow-beauty-close-up-1437373-pxhere.com.jpg" style="width: 100%">
+                            </div>
+                        </div><!-- #camera_wrap_3 -->
+                    </div><!-- .fluid_container -->
+                    <hr>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </aside>
+</div>
+<!-- thong tin  -->
+<p class="outside">
+<div class="container">
+    <!-- tieu de // row 3 -->
+    <div class="row">
+        <div class="col-md-12">
+            <b class="outside-title-page">BEST SELLER</b>
+        </div>
+    </div>
+    <!-- anh tieu de // row 4 -->
+    <div style="" class="row">
+        <div class="col-md-12" id="myBtnContainer">
+            <div class="col-md-2">
+                <div class="media-list" onclick="filterSelection('hair')">HAIR</div>
+            </div>
+            <div class="col-md-2">
+                <div class="media-list" onclick="filterSelection('skin')">SKIN</div>
+            </div>
+            <div class="col-md-2">
+                <div class="media-list" onclick="filterSelection('makeup')">MAKEUP</div>
+            </div>
+            <div class="col-md-2">
+                <div class="media-list" onclick="filterSelection('nails')">NAILS</div>
+            </div>
+            <div class="col-md-2">
+                <div class="media-list" onclick="filterSelection('jewellry')">JEWELLRY</div>
+            </div>
+            <div class="col-md-2">
+                <div class="media-list" onclick="filterSelection('wedding')">WEDDING</div>
+            </div>
+        </div>
+    </div>
+    <!-- san pham hot // row 5 -->
+    
+    <div class="row  column hair" >
+    <div class="col-md-3" ng-reat="product in productshome">
+        {{product.name}}
+    </div>
+        <!-- <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12" ng-repeat="product in products">
+              <hr>
+              <div>
+                  <h4 style="font-weight: 700;float: left;">{{product.name}}</h4>
+                  <fieldset class="rating{{product.class_rating_star}}" style="float: right;">
+                      <input type="radio" id="{{product.class_rating_star}}star5" name="rating{{product.class_rating_star}}" value="5" /><label class = "full" for="{{product.class_rating_star}}star5" title="Awesome - 5 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star4half" name="rating{{product.class_rating_star}}" value="4 and a half" /><label class="half" for="{{product.class_rating_star}}star4half" title="Pretty good - 4.5 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star4" name="rating{{product.class_rating_star}}" value="4" /><label class = "full" for="{{product.class_rating_star}}star4" title="Pretty good - 4 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star3half" name="rating{{product.class_rating_star}}" value="3 and a half" /><label class="half" for="{{product.class_rating_star}}star3half" title="Meh - 3.5 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star3" name="rating{{product.class_rating_star}}" value="3" /><label class = "full" for="{{product.class_rating_star}}star3" title="Meh - 3 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star2half" name="rating{{product.class_rating_star}}" value="2 and a half" /><label class="half" for="{{product.class_rating_star}}star2half" title="Kinda bad - 2.5 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star2" name="rating{{product.class_rating_star}}" value="2" /><label class = "full" for="{{product.class_rating_star}}star2" title="Kinda bad - 2 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star1half" name="rating{{product.class_rating_star}}" value="1 and a half" /><label class="half" for="{{product.class_rating_star}}star1half" title="Meh - 1.5 stars"></label>
+                      <input type="radio" id="{{product.class_rating_star}}star1" name="rating{{product.class_rating_star}}" value="1" /><label class = "full" for="{{product.class_rating_star}}star1" title="Sucks big time - 1 star"></label>
+                      <input type="radio" id="{{product.class_rating_star}}starhalf" name="rating{{product.class_rating_star}}" value="half" /><label class="half" for="{{product.class_rating_star}}starhalf" title="Sucks big time - 0.5 stars"></label>
+                  </fieldset>
+                  <div style="clear: left;clear: right;"></div>
+                  <div class="wrapper" style="float: right;">
+                      <input type="checkbox" id="st{{product.class_rating_star}}" value="1" />
+                      <label title="Favorite" for="st{{product.class_rating_star}}"></label>
+                  </div>
+              </div>
+              <div class="container1">
+                  <div class="overlay">
+                      <a href="#!profile_diamon/{{product.class_rating_star}}">
+                          <div class="text">PREVIEW SHADES</div>
+                      </a>
+                  </div>
+                  <div class="img-responsive">
+                      <a href="#!profile_diamon/{{product.class_rating_star}}">
+                          <img src={{product.image}} class="img-responsive">
+                      </a>
+                  </div>
+              </div>
+              <hr class="style-one">
+              <div>
+                  <div class="cost">
+                      {{product.price}}<sup>đ</sup>
+                  </div>
+                  <div>
+                      <div class="btn_custom"><span>BUY NOW !!!</span></div>
+                  </div>
+              </div>
+          </div>
+ -->
+        <!-- <div class="col-3 col-lg-3 col-sm-3 col-xs-12 column hair">
+            <hr>
+            <div>
+                <h4 style="font-weight: 700;float: left;">RING/PNJ</h4>
+                <fieldset class="rating1" style="float: right;">
+                    <input type="radio" id="1star5" name="rating1" value="5" /><label class = "full" for="1star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="1star4half" name="rating1" value="4 and a half" /><label class="half" for="1star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="1star4" name="rating1" value="4" /><label class = "full" for="1star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="1star3half" name="rating1" value="3 and a half" /><label class="half" for="1star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="1star3" name="rating1" value="3" /><label class = "full" for="1star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="1star2half" name="rating1" value="2 and a half" /><label class="half" for="1star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="1star2" name="rating1" value="2" /><label class = "full" for="1star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="1star1half" name="rating1" value="1 and a half" /><label class="half" for="1star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="1star1" name="rating1" value="1" /><label class = "full" for="1star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="1starhalf" name="rating1" value="half" /><label class="half" for="1starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+                <div style="clear: left;clear: right;"></div>
+                <div class="wrapper" style="float: right;">
+                    <input type="checkbox" id="st1" value="1" />
+                    <label title="Favorite" for="st1"></label>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="overlay">
+                    <a href="#!/profile/gold/1"><div class="text">PREVIEW SHADES</div></a>
+                </div>
+                <div class="img-responsive">
+                    <a href="#!/profile/gold/1"><img src="images\images_ring\images_ring_gold\gold_1.png" class="img-responsive"></a>
+                </div>
+            </div>
+            <hr class="style-one">
+            <div>
+                <div class="cost">
+                    12.300.000<sup>đ</sup>
+                </div>
+                <div>
+                    <div class="btn_custom"><span>SHOP 4 SHADES</span></div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    <br><br><br>
+    <!-- tieu de // row 6 // css row 3 -->
+    <div class="row">
+        <div class="col-md-12">
+            <b class="outside-title-page">LIMITED EDITION</b>
+            <b class="outside-title-page-small" >GET IT BEFORE IT'S GONE!</b>
+        </div>
+    </div>
+    <!-- anh thong tin // row 7 -->
+    <div class="row">
+        <!-- <div class="col-md-12"> -->
+        <div class="col-md-3">
+            <div class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/wing-light-abstract-black-and-white-architecture-white-18153-pxhere.com.jpg">
+                <div class="info text-inside">
+                    GET IT
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/light-abstract-black-and-white-architecture-structure-white-665995-pxhere.com.jpg">
+                <div class="info text-inside">
+                    BEFORE
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/light-black-and-white-architecture-white-vintage-retro-742858-pxhere.com.jpg">
+                <div class="info text-inside">
+                    IT'S
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/hand-rock-music-light-black-and-white-white-918544-pxhere.com.jpg">
+                <div class="info text-inside">
+                    GONE
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tieu de // row 8 // css row 3 -->
+    <div class="row">
+        <div class="col-md-12">
+            <b class="outside-title-page">FIND MORE FAVOURITES</b>
+            <b class="outside-title-page-small">SHOP BY CATEGORY</b>
+        </div>
+    </div>
+    <!-- anh thong  tin // row 9 // css row 7-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <div class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/window-glass-color-graffiti-painting-street-art-777250-pxhere.com.jpg">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="width: 562px;" class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/abstract-structure-pattern-red-color-paint-721084-pxhere.com.jpg">
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="parallax picture" data-parallax="scroll" data-z-index="1" data-image-src="images/index_background/texture-wall-reflection-color-crack-chipped-1046-pxhere.com.jpg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</p>
+<script type="text/javascript">
+    //Filter
+filterSelection("hair")
+//Add and remove show class from the elements that are not selected
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  //Conditionals
+  if (c == "hair") c ="hair";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+//Show filtered elements
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+//Hide elements that are not selected
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+// Add active class to the current button (highlight it)
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function(){
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+</script>
+<!-- footer // row 10 -->
